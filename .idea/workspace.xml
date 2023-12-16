@@ -4,72 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1d69853-44ef-4f4c-8fa5-810a9b871bea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/enums/MinigameType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/enums/TeamColor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/party/Party.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/player/NetworkPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/queue/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/RedisClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/RedisRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/RedisRequestListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/RedisResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/RedisServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/party/create/PartyCreateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/party/create/PartyCreateResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/party/invite/PartyInviteRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/party/invite/PartyInviteResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/party/join/PartyJoinRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/party/join/PartyJoinResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/party/kick/PartyKickRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/party/kick/PartyKickResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/party/reject/PartyRejectRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/party/reject/PartyRejectResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/player/get/PlayerGetRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/player/get/PlayerGetResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/player/handshake/PlayerHandshakeRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/player/handshake/PlayerHandshakeResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/player/update/PlayerUpdateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/player/update/PlayerUpdateResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/server/get/ServerGetRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/server/get/ServerGetResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/server/getbytype/ServerGetByTypeRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/server/getbytype/ServerGetByTypeResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/server/handshake/ServerHandshakeRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/server/handshake/ServerHandshakeResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/server/update/ServerUpdateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/clientnetworkmanager/server/update/ServerUpdateResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/networkmanagerclient/message/SendMessageRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/impl/networkmanagerclient/message/SendMessageResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/listeners/RedisClientNetworkManagerListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/redis/listeners/RedisNetworkManagerClientListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/server/BungeeServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/server/GameServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/eu/networkmanager/common/utils/GsonUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/eu/networkmanager/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/eu/networkmanager/server/managers/PartyManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/eu/networkmanager/server/managers/QueueManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/eu/networkmanager/server/managers/ServerManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/eu/networkmanager/server/player/OnlinePlayers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/eu/networkmanager/server/redis/RedisRequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
+    <list default="true" id="e1d69853-44ef-4f4c-8fa5-810a9b871bea" name="Changes" comment="initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +114,20 @@
       <option name="presentableId" value="Default" />
       <updated>1701965507326</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1702753627776</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702753627776</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
