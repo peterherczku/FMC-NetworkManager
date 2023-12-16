@@ -1,4 +1,4 @@
-package eu.networkmanager.common.redis.impl.party.invite;
+package eu.networkmanager.common.redis.impl.clientnetworkmanager.party.invite;
 
 
 import eu.networkmanager.common.redis.RedisResponse;

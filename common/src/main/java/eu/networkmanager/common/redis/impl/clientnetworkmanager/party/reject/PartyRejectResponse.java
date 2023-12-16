@@ -1,4 +1,4 @@
-package eu.networkmanager.common.redis.impl.party.reject;
+package eu.networkmanager.common.redis.impl.clientnetworkmanager.party.reject;
 
 
 import eu.networkmanager.common.redis.RedisResponse;

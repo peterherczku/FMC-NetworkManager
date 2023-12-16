@@ -1,7 +1,8 @@
-package eu.networkmanager.common.redis.impl.player.get;
+package eu.networkmanager.common.redis.impl.clientnetworkmanager.player.get;
 
 import eu.networkmanager.common.redis.RedisRequest;
 import eu.networkmanager.common.redis.RedisRequestListener;
+import eu.networkmanager.common.redis.listeners.RedisClientNetworkManagerListener;
 
 import java.util.Collections;
 import java.util.UUID;
@@ -14,7 +15,7 @@ public class PlayerGetRequest extends RedisRequest<PlayerGetResponse> {
         super("PLAYER_GET");
     }
 
-    public PlayerGetRequest(UUID uuid, String name, UUID bungeeUuid) {
+    public PlayerGetRequest(UUID uuid) {
         super("PLAYER_GET", PlayerGetRequest.class.getName(), Collections.emptyList());
         this.uuid=uuid;
     }
@@ -27,7 +28,7 @@ public class PlayerGetRequest extends RedisRequest<PlayerGetResponse> {
 
     @Override
     public PlayerGetResponse processRequest(RedisRequestListener listener) {
-        return listener.processPlayerGet(this);
+        return ((RedisClientNetworkManagerListener) listener).processPlayerGet(this);
     }
 
     public UUID getUuid() {

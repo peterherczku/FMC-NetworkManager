@@ -1,8 +1,9 @@
-package eu.networkmanager.common.redis.impl.party.reject;
+package eu.networkmanager.common.redis.impl.clientnetworkmanager.party.reject;
 
 
 import eu.networkmanager.common.redis.RedisRequest;
 import eu.networkmanager.common.redis.RedisRequestListener;
+import eu.networkmanager.common.redis.listeners.RedisClientNetworkManagerListener;
 
 import java.util.Collections;
 import java.util.UUID;
@@ -28,7 +29,7 @@ public class PartyRejectRequest extends RedisRequest<PartyRejectResponse> {
 
     @Override
     public PartyRejectResponse processRequest(RedisRequestListener listener) {
-        return listener.processPartyReject(this);
+        return ((RedisClientNetworkManagerListener) listener).processPartyReject(this);
     }
 
     public UUID getPlayer() {

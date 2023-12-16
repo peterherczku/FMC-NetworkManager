@@ -1,9 +1,8 @@
-package eu.networkmanager.common.redis.impl.server.update;
+package eu.networkmanager.common.redis.impl.clientnetworkmanager.server.update;
 
-import eu.networkmanager.common.player.NetworkPlayer;
 import eu.networkmanager.common.redis.RedisRequest;
 import eu.networkmanager.common.redis.RedisRequestListener;
-import eu.networkmanager.common.redis.impl.server.handshake.ServerHandshakeRequest;
+import eu.networkmanager.common.redis.listeners.RedisClientNetworkManagerListener;
 import eu.networkmanager.common.server.Server;
 
 import java.util.Collections;
@@ -29,7 +28,7 @@ public class ServerUpdateRequest<T extends Server> extends RedisRequest<ServerUp
 
     @Override
     public ServerUpdateResponse processRequest(RedisRequestListener listener) {
-        return listener.processServerUpdate(this);
+        return ((RedisClientNetworkManagerListener) listener).processServerUpdate(this);
     }
 
     public T getServer() {

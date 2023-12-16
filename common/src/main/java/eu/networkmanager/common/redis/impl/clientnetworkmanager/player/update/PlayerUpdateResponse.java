@@ -1,6 +1,5 @@
-package eu.networkmanager.common.redis.impl.player.update;
+package eu.networkmanager.common.redis.impl.clientnetworkmanager.player.update;
 
-import eu.networkmanager.common.player.NetworkPlayer;
 import eu.networkmanager.common.redis.RedisResponse;
 
 import java.util.Collections;

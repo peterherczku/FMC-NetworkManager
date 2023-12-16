@@ -1,8 +1,9 @@
-package eu.networkmanager.common.redis.impl.party.invite;
+package eu.networkmanager.common.redis.impl.clientnetworkmanager.party.invite;
 
 
 import eu.networkmanager.common.redis.RedisRequest;
 import eu.networkmanager.common.redis.RedisRequestListener;
+import eu.networkmanager.common.redis.listeners.RedisClientNetworkManagerListener;
 
 import java.util.Collections;
 import java.util.UUID;
@@ -31,7 +32,7 @@ public class PartyInviteRequest extends RedisRequest<PartyInviteResponse> {
 
     @Override
     public PartyInviteResponse processRequest(RedisRequestListener listener) {
-        return listener.processPartyInvite(this);
+        return ((RedisClientNetworkManagerListener) listener).processPartyInvite(this);
     }
 
     public UUID getLeader() {

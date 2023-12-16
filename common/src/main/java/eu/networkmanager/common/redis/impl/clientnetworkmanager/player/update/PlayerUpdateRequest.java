@@ -1,12 +1,11 @@
-package eu.networkmanager.common.redis.impl.player.update;
+package eu.networkmanager.common.redis.impl.clientnetworkmanager.player.update;
 
 import eu.networkmanager.common.player.NetworkPlayer;
 import eu.networkmanager.common.redis.RedisRequest;
 import eu.networkmanager.common.redis.RedisRequestListener;
-import eu.networkmanager.common.redis.impl.player.get.PlayerGetResponse;
+import eu.networkmanager.common.redis.listeners.RedisClientNetworkManagerListener;
 
 import java.util.Collections;
-import java.util.UUID;
 
 public class PlayerUpdateRequest extends RedisRequest<PlayerUpdateResponse> {
 
@@ -17,7 +16,7 @@ public class PlayerUpdateRequest extends RedisRequest<PlayerUpdateResponse> {
     }
 
     public PlayerUpdateRequest(NetworkPlayer updatedPlayer) {
-        super("PLAYER_GET", PlayerUpdateRequest.class.getName(), Collections.emptyList());
+        super("PLAYER_UPDATE", PlayerUpdateRequest.class.getName(), Collections.emptyList());
         this.updatedPlayer=updatedPlayer;
     }
 
@@ -29,7 +28,7 @@ public class PlayerUpdateRequest extends RedisRequest<PlayerUpdateResponse> {
 
     @Override
     public PlayerUpdateResponse processRequest(RedisRequestListener listener) {
-        return listener.proccessPlayerUpdate(this);
+        return ((RedisClientNetworkManagerListener) listener).proccessPlayerUpdate(this);
     }
 
     public NetworkPlayer getUpdatedPlayer() {

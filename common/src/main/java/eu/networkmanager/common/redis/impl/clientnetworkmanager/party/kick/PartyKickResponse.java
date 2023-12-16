@@ -1,4 +1,4 @@
-package eu.networkmanager.common.redis.impl.party.kick;
+package eu.networkmanager.common.redis.impl.clientnetworkmanager.party.kick;
 
 
 import eu.networkmanager.common.redis.RedisResponse;

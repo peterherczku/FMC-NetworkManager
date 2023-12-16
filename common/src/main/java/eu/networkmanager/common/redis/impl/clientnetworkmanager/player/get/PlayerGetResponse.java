@@ -1,4 +1,4 @@
-package eu.networkmanager.common.redis.impl.player.get;
+package eu.networkmanager.common.redis.impl.clientnetworkmanager.player.get;
 
 import eu.networkmanager.common.player.NetworkPlayer;
 import eu.networkmanager.common.redis.RedisResponse;

@@ -1,10 +1,9 @@
-package eu.networkmanager.common.redis.impl.party.create;
+package eu.networkmanager.common.redis.impl.clientnetworkmanager.party.create;
 
 
 import eu.networkmanager.common.redis.RedisRequest;
 import eu.networkmanager.common.redis.RedisRequestListener;
-import eu.networkmanager.common.redis.impl.startGame.StartGameResponse;
-import eu.networkmanager.common.server.GameServer;
+import eu.networkmanager.common.redis.listeners.RedisClientNetworkManagerListener;
 
 import java.util.Collections;
 import java.util.UUID;
@@ -30,7 +29,7 @@ public class PartyCreateRequest extends RedisRequest<PartyCreateResponse> {
 
     @Override
     public PartyCreateResponse processRequest(RedisRequestListener listener) {
-        return listener.processPartyCreate(this);
+        return ((RedisClientNetworkManagerListener) listener).processPartyCreate(this);
     }
 
     public UUID getLeader() {

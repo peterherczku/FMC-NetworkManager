@@ -1,7 +1,8 @@
-package eu.networkmanager.common.redis.impl.server.get;
+package eu.networkmanager.common.redis.impl.clientnetworkmanager.server.get;
 
 import eu.networkmanager.common.redis.RedisRequest;
 import eu.networkmanager.common.redis.RedisRequestListener;
+import eu.networkmanager.common.redis.listeners.RedisClientNetworkManagerListener;
 
 import java.util.Collections;
 import java.util.UUID;
@@ -27,7 +28,7 @@ public class ServerGetRequest extends RedisRequest<ServerGetResponse<?>> {
 
     @Override
     public ServerGetResponse<?> processRequest(RedisRequestListener listener) {
-        return listener.processServerGet(this);
+        return ((RedisClientNetworkManagerListener) listener).processServerGet(this);
     }
 
     public UUID getUuid() {

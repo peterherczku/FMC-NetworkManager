@@ -1,4 +1,4 @@
-package eu.networkmanager.common.redis.impl.server.getbytype;
+package eu.networkmanager.common.redis.impl.clientnetworkmanager.server.getbytype;
 
 import eu.networkmanager.common.redis.RedisResponse;
 import eu.networkmanager.common.server.Server;

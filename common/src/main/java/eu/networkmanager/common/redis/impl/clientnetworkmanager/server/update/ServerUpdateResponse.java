@@ -1,4 +1,4 @@
-package eu.networkmanager.common.redis.impl.server.update;
+package eu.networkmanager.common.redis.impl.clientnetworkmanager.server.update;
 
 import eu.networkmanager.common.redis.RedisResponse;
 

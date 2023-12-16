@@ -1,8 +1,9 @@
-package eu.networkmanager.common.redis.impl.party.kick;
+package eu.networkmanager.common.redis.impl.clientnetworkmanager.party.kick;
 
 
 import eu.networkmanager.common.redis.RedisRequest;
 import eu.networkmanager.common.redis.RedisRequestListener;
+import eu.networkmanager.common.redis.listeners.RedisClientNetworkManagerListener;
 
 import java.util.Collections;
 import java.util.UUID;
@@ -31,7 +32,7 @@ public class PartyKickRequest extends RedisRequest<PartyKickResponse> {
 
     @Override
     public PartyKickResponse processRequest(RedisRequestListener listener) {
-        return listener.processPartyKick(this);
+        return ((RedisClientNetworkManagerListener) listener).processPartyKick(this);
     }
 
     public UUID getLeader() {

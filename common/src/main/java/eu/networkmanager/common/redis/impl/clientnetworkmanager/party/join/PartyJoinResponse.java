@@ -1,4 +1,4 @@
-package eu.networkmanager.common.redis.impl.party.join;
+package eu.networkmanager.common.redis.impl.clientnetworkmanager.party.join;
 
 
 import eu.networkmanager.common.redis.RedisResponse;

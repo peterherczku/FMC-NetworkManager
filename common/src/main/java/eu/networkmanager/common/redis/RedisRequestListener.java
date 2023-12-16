@@ -1,2 +1,5 @@
-package eu.networkmanager.common.redis;public interface RedisRequestListener {
+package eu.networkmanager.common.redis;
+
+public interface RedisRequestListener {
+
 }

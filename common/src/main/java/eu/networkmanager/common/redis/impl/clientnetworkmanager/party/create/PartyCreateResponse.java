@@ -1,4 +1,4 @@
-package eu.networkmanager.common.redis.impl.party.create;
+package eu.networkmanager.common.redis.impl.clientnetworkmanager.party.create;
 
 
 import eu.networkmanager.common.redis.RedisResponse;

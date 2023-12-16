@@ -1,4 +1,4 @@
-package eu.networkmanager.common.redis.impl.server.handshake;
+package eu.networkmanager.common.redis.impl.clientnetworkmanager.server.handshake;
 
 import eu.networkmanager.common.redis.RedisResponse;
 
@@ -15,7 +15,7 @@ public class ServerHandshakeResponse extends RedisResponse {
     }
 
     public ServerHandshakeResponse(UUID requestUuid, boolean success, String message) {
-        super(requestUuid, "HANDSHAKE", ServerHandshakeResponse.class.getName(), Collections.emptyList());
+        super(requestUuid, "SERVER_HANDSHAKE", ServerHandshakeResponse.class.getName(), Collections.emptyList());
         this.success=success;
         this.message=message;
     }

@@ -1,12 +1,11 @@
-package eu.networkmanager.common.redis.impl.server.getbytype;
+package eu.networkmanager.common.redis.impl.clientnetworkmanager.server.getbytype;
 
 import eu.networkmanager.common.redis.RedisRequest;
 import eu.networkmanager.common.redis.RedisRequestListener;
-import eu.networkmanager.common.redis.impl.server.handshake.ServerHandshakeRequest;
+import eu.networkmanager.common.redis.listeners.RedisClientNetworkManagerListener;
 import eu.networkmanager.common.server.Server;
 
 import java.util.Collections;
-import java.util.UUID;
 
 public class ServerGetByTypeRequest<T extends Server> extends RedisRequest<ServerGetByTypeResponse<T>> {
 
@@ -33,6 +32,6 @@ public class ServerGetByTypeRequest<T extends Server> extends RedisRequest<Serve
 
     @Override
     public ServerGetByTypeResponse<T> processRequest(RedisRequestListener listener) {
-        return (ServerGetByTypeResponse<T>) listener.processGetServerByType(this);
+        return (ServerGetByTypeResponse<T>) ((RedisClientNetworkManagerListener) listener).processGetServerByType(this);
     }
 }
